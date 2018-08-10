@@ -14,3 +14,4 @@ make
 make install
 cd
 echo 'source /usr/local/share/trex/trex_init.bash' >> /root/.bashrc
+rm -r misc

@@ -22,4 +22,4 @@ CMD=bash
 #docker run -it --name $BASE_NAME $BASE_CONTAINER:$VERSION $CMD
 
 ## Run with no volumes
-docker run --rm -it -v $(pwd)/install.sh:/root/install.sh -v $(pwd)/misc/:/root/misc/ --privileged --name $BASE_NAME $BASE_CONTAINER:$VERSION $CMD
+docker run --rm -it --privileged --name $BASE_NAME $BASE_CONTAINER:$VERSION $CMD
